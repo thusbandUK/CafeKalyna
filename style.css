@@ -1,0 +1,36 @@
+
+
+#banner {
+    background: url("images/Photo from Tom(4).jpg") no-repeat center center fixed;
+    background-size: 100% ;
+    background-position: 0% 10%;
+    /*display: inline-flex;*/
+    
+    z-index: 1;
+    
+    opacity: 1;
+    
+    background-color: red;
+    height: 1000px;
+
+}
+
+#intro {
+    
+    
+    width: 80%;
+    margin-left: 10%;
+    padding-top: 14%;
+    
+}
+
+#intro p {
+    background-color: white;
+    opacity: 1;
+    font-size: 2em;
+
+}
+
+#intro img {
+    width: 100%;
+}
