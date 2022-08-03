@@ -1,7 +1,25 @@
 body {
-    background: url("images/Photo from Tom(4).jpg") no-repeat center center fixed;
+    background: url("images/Webpage/Cafe_exterior_border.png") no-repeat center center fixed;
+    /*background: url("images/Webpage/Photo from Tom(4).jpg") no-repeat center center fixed;*/
     background-size: 100% ;
-    background-position: 0% 10%;
+    background-position: 0% 0%;
+    
+}
+
+.image-text-twin {
+    display: inline-flex;
+}
+
+.image-container {
+    width: 50%;
+}
+
+img {
+    width: 100%;
+}
+
+.text {
+    width: 50%;
 }
 
 #banner {
@@ -10,7 +28,7 @@ body {
     background-position: 0% 10%;
     display: inline-flex;*/
     
-    z-index: 1;
+    
     
     opacity: 1;
     
@@ -24,7 +42,8 @@ body {
     
     width: 80%;
     margin-left: 10%;
-    padding-top: 14%;
+    /*padding-top: 14%;*/
+    margin-top: 14%;
     
 }
 
