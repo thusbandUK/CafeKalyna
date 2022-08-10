@@ -1,6 +1,10 @@
+* {
+  font-family: 'Playfair Display', serif;
+}
+
 body {
-    background: url("images/Webpage/Cafe_exterior_border.png") no-repeat center center fixed;
-    /*background: url("images/Webpage/Photo from Tom(4).jpg") no-repeat center center fixed;*/
+  /*background: url("images/Webpage/Cafe_exterior_border.png") no-repeat center center fixed;
+    background: url("images/Webpage/Photo from Tom(4).jpg") no-repeat center center fixed;*/
     background-size: 100% ;
     background-position: 0% 0%;
     
@@ -16,10 +20,11 @@ html {
     margin-right: 5%;
 
 }
+/*
 body *{
   font-family: "Open Sans", sans-serif;
 }
-
+*/
 .image-container {
   overflow: hidden;
 }
@@ -34,7 +39,7 @@ body *{
 
 header {
   height: 141px;
-  background-color: #428bb4;
+  background-color: #3F9CC7;
   color: #eff3f8;
   text-align: center;
   margin-top: 0; 
@@ -52,6 +57,9 @@ header h1{
   margin-top: 40px;
 }
 
+header img {
+  max-height: 100%;
+}
 
 .btn{
     height: 40px;
