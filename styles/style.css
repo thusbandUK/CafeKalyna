@@ -244,8 +244,6 @@ main {
 .intro-text,
 .address-text,
 .about-text{
-    /*font-style: italic;
-    font-size: large;*/
     color: #4974c4;
 }
 .about-heading{
@@ -558,6 +556,13 @@ nav ul li a {
 html{
   font-size: medium;
 }
+.about-heading,.intro-heading{
+  font-size: 1.5rem;
+}
+.about-heading{
+  margin-top: 20px;
+}
+
 }
 
 
