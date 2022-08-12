@@ -8,11 +8,10 @@ html, body {
     background-size: 100% ;
     background-position: 0% 0%;*/
    
-    height: 100%;
-    width: 100%;
-    /*margin: 0;*/
-    padding: 0px;
-    margin: 0px;
+    /* height: 100%;
+    width: 100%; */
+    padding: 0;
+    margin: 0;
 }
 
 html {
@@ -24,11 +23,7 @@ p {
 }
 
 
-.inline {
-   /* margin-left: 5% ;
-    margin-right: 5%;*/
 
-}
 /*
 body *{
   font-family: "Open Sans", sans-serif;
@@ -46,17 +41,19 @@ body *{
 
 
 
-header {
-  /*height: 100%;*/
-  
+header {  
+  background-color: #3F9CC7;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
   color: #eff3f8;
   text-align: center;
   margin-top: 0; 
-  position: fixed;
+  position: relative;
   top: 0;
   left: 0;
   width: 100%;
-  z-index: 999px;
+  /* z-index: 2px; */
   box-shadow: 0px 0px 6px 0px rgba(0, 0, 0, 0.5);
 }
 
@@ -66,14 +63,43 @@ header h1{
   margin-top: 40px;
 }
 
+nav{
+  display: flex;
+  align-items: center;
+  margin-right: 20px;
+}
+
+nav ul li a {
+  color: white;
+  text-decoration: none;
+}
+a:hover{
+  color: yellow;
+  cursor: pointer;
+  opacity: 0.7;
+}
+
 #logo-background {
-  height: 141px;
-  background-color: #3F9CC7;
+    height: 141px;
+    background-color: #3F9CC7;
+    display: flex;
+    flex-wrap: wrap;
+    align-content: flex-start;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+
 }
 
 #logo-background img {
+  display: flex;
+  justify-content: center;
   max-height: 100%;
+
+  /* margin-left: 300px; */
 }
+
+
 
 .berry-design-container {
   width: 100%;
@@ -84,19 +110,18 @@ header h1{
 
 .berry-design {
   width: 15%;
-  /*height: 100%;*/
+  /* height: 100%; */
   background-color: #F3DF70;
   
 }
 
 .berry-design img {
-  object-fit: cover;
+  object-fit:fill;
   width: 100%;
-  height: 100%;
+  height:fit-content ;
 }
 
 main {
-  margin-top: 141px;
   width: 100%;
 }
 
@@ -109,10 +134,15 @@ main {
     font-weight: 900;
     font-size: large;
     background-color: #2795df;
-    margin-top: 60px;
+    /* margin-top: 60px; */
 }
 .btn:hover {
-    opacity: 0.7;
+    cursor: pointer;
+    color: yellow;
+}
+
+.connect{
+  margin-top: 10px;
 }
 
 /* @media only screen and(max-width:560px){
@@ -189,16 +219,17 @@ main {
 
 .image-container{
     overflow: hidden;
-    width: 80%;
+    width: 100%;
 }
 .image-container img{
     max-width: 100%;
+    border-radius: 15px;
     /*margin-left: 5%;*/
 }
 .intro{
     flex-grow: 1;
     height: 400px;
-    width: auto;
+    /* width: auto; */
     max-width: 50%;
     padding: 0px 30px 30px;
     /*margin: 30px;*/
@@ -224,7 +255,7 @@ main {
 .fa {
   padding: 5px;
   font-size: 30px;
-  width: 40px;
+  width: 50px;
   text-align: center;
   text-decoration: none;
   border-radius: 10px;
@@ -263,10 +294,10 @@ section{
 
 /* Slideshow container */
 .slideshow-container {
-  max-width: 50%;
-  /*position:static;*/
+  max-width: 80%;
+  position:relative;
   margin: auto;
-  height: 400px;
+  height: 550px;
 }
 
 .fade {
@@ -280,6 +311,7 @@ section{
     height: 100%;
     width: 100%;
     margin-bottom: 20px;
+    border-radius: 20px;
 }
 
 
@@ -297,7 +329,7 @@ section{
 /* Next & previous buttons */
 .prev, .next {
   cursor: pointer;
-  /* position: absolute; */
+  position: absolute; 
   top: 50%;
   width: auto;
   margin-top: -22px;
@@ -318,16 +350,16 @@ section{
 
 /* On hover, add a black background color with a little bit see-through */
 .prev:hover, .next:hover {
-  background-color: rgba(0,0,0,0.8);
+  background-color: rgba(74, 163, 214, 0.8);
 }
 
 /* Caption text */
 .text {
-  color: #3F9CC7;
-  font-size: 15px;
+  color: #fdfdff;
+  font-size: 35px;
   padding: 8px 12px;
-  /* position: absolute; */
-  /*bottom: 8px;*/
+  position: absolute;
+  bottom: 8px; 
   width: 100%;
   text-align: center;
 }
@@ -337,7 +369,7 @@ section{
   color: #f2f2f2;
   font-size: 12px;
   padding: 8px 12px;
-  /* position: absolute; */
+  position: absolute;
   top: 0;
 }
 
@@ -347,14 +379,14 @@ section{
   height: 15px;
   width: 15px;
   margin: 10px 2px;
-  background-color: #bbb;
+  background-color: #3F9CC7;
   border-radius: 50%;
   display: inline-block;
   transition: background-color 0.6s ease;
 }
 
 .active, .dot:hover {
-  background-color: #717171;
+  background-color: #a9cada;
 }
 
 /* Fading animation */
@@ -399,17 +431,19 @@ section{
 } */
 
 footer *{
-    position: relative;
+    /* position: relative; */
     left: 5px;
 } 
 footer .text {
     margin-left: 10px;
 }
 footer{
-  color: white;
-  background-color: #3F9CC7;
+    color: white;
+    background-color: #3F9CC7;
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
+    justify-content: space-around;
+    /* flex-direction: column; */
     margin-bottom: 1rem;
     padding: 2rem;
     margin: auto;
@@ -418,15 +452,114 @@ footer{
     font-family: 'Playfair Display', serif;
     
 }
+.credit{
+  width: 60%;
+}
+.credit * {
+  margin-top: 20px;
+}
 
 @media only screen and(max-width:560px){
     footer{
         padding : 4.8125rem 15% 0 15%;
         margin: 0 auto;
         left:20px;
-        
     }
+    
 }
+
+@media only screen and (min-width: 750px){
+  .intro-container{
+  flex-direction: row;
+  justify-content: center;
+  max-width:100%;
+  }
+  .intro-container{
+    margin-left: 50px;
+  }
+  /* #logo-background {
+    max-width: 100%;
+  } */
+}
+
+
+@media only screen and (max-width: 749px) {
+  .intro-container{
+    flex-direction: column;
+    justify-content: center;
+  }
+  .image-container {
+    margin: auto;
+  }
+  .intro{
+    flex-grow: 1;
+    height: 400px;
+    max-width: 90%;
+    padding: 0px 30px 30px;
+    margin: 10px;
+}
+header{
+  display: flex;
+  width: 100%;
+}
+/* header img{
+  
+} */
+
+#logo-background {
+  display: flex;
+flex-direction: row;
+align-content: center;
+justify-content: flex-start;
+  height: 100px;
+  margin-left: 20px;
+}
+#logo-background img{
+  display: flex;
+  max-width: 40%;
+}
+nav{
+  display: flex;
+ align-items: center;
+ margin-right: 20px;
+}
+nav ul li a {
+  float: right;
+}
+.slideshow-container{
+  margin: 0 5px;
+  max-width: 100%;
+}
+.image-container img{
+    max-width: 100%;
+    border-radius: 18px;
+    margin: 0 auto 20px;
+    padding: 5px;
+}
+.container-fluid {
+    /*display: flex;*/
+    margin: 0 10px 5px;
+    max-width: 100%;
+}
+.hero-banner {
+    display: flex;
+    max-width: 100%;
+    justify-content: center;
+    flex-wrap: nowrap;
+    margin: 10px 20px;
+}
+
+.connect{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 40px;
+}
+}
+
+
+
+
 
 /* .about-us{
     flex-grow: 1;
