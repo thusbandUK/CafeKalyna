@@ -91,8 +91,8 @@ a:hover{
 
 .berry-design-container {
   width: 100%;
-  height: 100%;
-  display: inline-flex;
+  height: auto;
+  display: flex;
   justify-content: space-between;
 }
 
@@ -100,8 +100,20 @@ a:hover{
   width: 15%;
   /* height: 100%; */
   background-color: #F3DF70;
+  background-size: cover;
+  background-repeat: no-repeat;
+  
   
 }
+
+#berry-design-left {
+  background-image: url('../images/Webpage/Designs/Web/Flower\ pattern\ left\ hand\ side.png');
+}
+
+#berry-design-right {
+  background-image: url('../images/Webpage/Designs/Web/Flower\ pattern\ right\ hand\ side.png');
+}
+
 
 .berry-design img {
   object-fit:fill;
@@ -130,6 +142,9 @@ main {
 
 .connect{
   margin-top: 10px;
+  display: flex;
+  justify-content: space-between;
+  width: fit-content;
 }
 
 
@@ -185,9 +200,10 @@ main {
 }
 .intro{
     flex-grow: 1;
-    height: 400px;    
-    max-width: 50%;
-    padding: 0px 30px 30px;    
+    height: auto;    
+    margin-right: 30px;
+    padding: 0px 30px 30px;  
+    line-height: 1.2em;  
 }
 .intro-heading ,
 .address-heading,
@@ -196,7 +212,7 @@ main {
 }
 
 .about-heading{
-  margin-top: 50px;
+  margin-top: 70px;
 }
 
 .fa {
@@ -216,12 +232,14 @@ main {
 .fa-facebook {
   background: #2795df;
   color: #eff3f8;
+  margin-left: 10px;
 
 }
 
 .fa-instagram {
   background: #2795df;
   color: #f6f6fc;
+  margin-left: 10px;
 }
 
 section{
@@ -542,14 +560,14 @@ html{
   }
 
   .mobile h1 {
-    font-size: 40px;
+    font-size: 32px;
     font-family: 'Playfair Display', serif;
     text-align: center;
     padding: 5%;
   }
 
   .hero-banner p  {
-    font-size: 36px;
+    font-size: 30px;
     padding: 0% 5%;
     line-height: 1.2em;
   }
@@ -566,6 +584,7 @@ html{
 
   .image-container img {
     padding: 0px;
+    border-radius: 0px;
   }
 
   .intro {
@@ -573,17 +592,29 @@ html{
   }
 
   h2.intro-heading, h2.about-heading {
-    font-size: 40px;
+    font-size: 40px;    
+  }
+
+  h2.intro-heading {
     margin-top: 40px;
   }
 
+  h2.about-heading {
+    margin-top: 70px;
+  }
+
+
   p.intro-text, p.about-text {
-    font-size: 36px;
+    font-size: 30px;
     line-height: 1.4em;
   }
 
   .container-fluid {
     margin: 0px;
+  }
+
+  .fade img {
+    border-radius: 0px;
   }
 
   .address {
